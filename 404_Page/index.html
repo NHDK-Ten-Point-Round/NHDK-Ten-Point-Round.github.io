@@ -25,22 +25,9 @@
     </script>
     <style>
         .btn{
-            -webkit-text-size-adjust: 100%;
-            word-break: normal;
-            tab-size: 4;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
-            visibility: visible;
             font-family: DM Sans,Noto Sans TC,PingFangTC,Microsoft JhengHei,sans-serif;
             line-height: 1.5;
-            -webkit-box-direction: normal;
-            text-align: center;
-            background-repeat: no-repeat;
-            box-sizing: inherit;
-            margin: 0;
             text-decoration: none;
-            cursor: pointer;
             color: #fff;
             padding: .5rem 6rem;
             background-color: #cf1219;
@@ -53,47 +40,29 @@
         .main-text{
             width: 100%;
         }
-        h1{
-            -webkit-tap-highlight-color: transparent;
-            -webkit-text-size-adjust: 100%;
-            color: #484848;
-            -webkit-font-smoothing: antialiased;
-            line-break: strict;
+        .font{
             font-family: Circular,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
-            box-sizing: border-box;
+        }
+        h1{
+            color: #484848;
             margin: 0.67em 0;
-            line-height: 1.1;
-            text-rendering: optimizelegibility;
+            line-height: 1.3;
+            
             margin-bottom: 15px;
             font-weight: 700;
-            /* display: none !important; */
             font-size: 145px;
             margin-top: 0;
         }
         h2{
-            -webkit-tap-highlight-color: transparent;
-            -webkit-text-size-adjust: 100%;
             color: #484848;
-            -webkit-font-smoothing: antialiased;
-            line-break: strict;
-            font-family: Circular,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
-            box-sizing: border-box;
-            line-height: 1.1;
-            text-rendering: optimizelegibility;
+            line-height: 1.3;
             font-weight: normal;
             font-size: 30px;
             margin-top: 25px;
             margin-bottom: 15px;
         }
         h6{
-            -webkit-tap-highlight-color: transparent;
-            -webkit-text-size-adjust: 100%;
-            -webkit-font-smoothing: antialiased;
-            line-break: strict;
-            font-family: Circular,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
-            box-sizing: border-box;
-            line-height: 1.1;
-            text-rendering: optimizelegibility;
+            line-height: 1.3;
             font-weight: bold;
             color: #767676;
             font-size: 13px;
@@ -125,7 +94,6 @@
         .footer{
             height: 50px;
             width: 100%;
-            /* background-color: #cf1219; */
             position: absolute;
             bottom: 15%;
         }
@@ -144,13 +112,13 @@
     <div class="main-main wrapper">
         <section id="main_body">
             <div class="main-text container">
-                <h1>Oops!</h1>
+                <h1 class="font">Oops!</h1>
             </div>
             <div class="main-text container">
-                <h2>我們找不到您要找的頁面</h2>
+                <h2 class="font">我們找不到您要找的頁面</h2>
             </div>
             <div class="main-text container">
-                <h6>錯誤代碼：404</h6>
+                <h6 class="font">錯誤代碼：404</h6>
             </div>
             <div class="container btns">
                 <a class="btn" href="../index.html">帶我回首頁</a>
