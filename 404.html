@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8" />
+    <title>redirect..</title>
+    <script type="text/javascript">
+        (function () {
+            fetch('./Route/redirect.json')
+                .then(response => response.json())
+                .then(routes => {
+                    var fragment = location.pathname.split('/').pop();
+                    var url = routes[fragment];
+                    location.href = url ? url : './404_Page/index.html';
+                });
+        })();
+    </script>
+</head>
+</html>
