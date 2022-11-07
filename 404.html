@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8" />
+    <title>redirect..</title>
+    <script type="text/javascript">
+        (function () {
+            fetch('./Route/redirect.json')
+                .then(response => response.json())
+                .then(routes => {
+                    var fragment = location.pathname.split('/').pop();
+                    var url = routes[fragment];
+                    location.href = url ? url : './error_page/404.html';
+                });
+        })();
+    </script>
+</head>
+    <script>document.location.href="../error_page/303.html";</script>
+</html>
